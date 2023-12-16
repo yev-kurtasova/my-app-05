@@ -2,6 +2,8 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import { Posts } from './containers/Posts';
 import Comments from './containers/Comments';
+import Inputs from './containers/Inputs';
+
 
 function App() {
 
@@ -22,9 +24,12 @@ function App() {
         <li key={user.id}>{user.name}</li>
       )} */}
 
-      <h1>Task 1: posts & comments</h1>
+      <h1>Posts & comments</h1>
       <Posts data={posts} />
       <Comments />
+
+      <h1>Task 1: inputs</h1>
+      <Inputs />
     </div>
   );
 }
