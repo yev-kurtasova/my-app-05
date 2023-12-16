@@ -1,6 +1,7 @@
 import './App.css';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Posts } from './containers/Posts';
+import Comments from './containers/Comments';
 
 function App() {
 
@@ -13,7 +14,6 @@ function App() {
   }, [])
 
 
-
   return (
     <div className="App">
       {/* <button >Push</button> */}
@@ -24,6 +24,7 @@ function App() {
 
       <h1>Task 1: posts & comments</h1>
       <Posts data={posts} />
+      <Comments />
     </div>
   );
 }
