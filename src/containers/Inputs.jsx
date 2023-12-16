@@ -34,7 +34,7 @@ function Inputs() {
             <button onClick={addUser}>Submit</button>
             <ul>
                 {users?.map((user, idx) => {
-                    return <li key={idx}>{user.name}</li>
+                    return <li key={idx}>{user.name}{user.lastName}{user.email}</li>
                 })}
             </ul>
         </>
